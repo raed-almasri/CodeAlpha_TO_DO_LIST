@@ -1,0 +1,65 @@
+<!-- 
+Contact :
+Hi, I'm Raed Al Masri, a programmer Backend Developer. You can find me on:
+
+LinkedIn: https://www.linkedin.com/in/raed-al-masri/
+Instagram: https://www.instagram.com/raed.almasri.tech/
+Telegram: https://t.me/RAED_AL_Masri
+Github: https://github.com/raed-almasri
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js" defer></script>
+        <title>My Todo List</title>
+    </head>
+    <body
+        style="
+            background-image: url('./background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        "
+    >
+        <section class="todo">
+            <center>
+                <h2>✨ Your Todo list ✨</h2>
+                <img
+                    src="./note.png"
+                    alt=""
+                    style="
+                        background-image: url('./note.png');
+                        width: 180px;
+                        height: 150px;
+                    "
+                />
+            </center>
+            <div class="input">
+                <input
+                    type="text"
+                    class="input-field"
+                    id="todoInput"
+                    placeholder="Write your task"
+                />
+                <button class="btn">Insert ➕</button>
+            </div>
+            <ul class="scroll">
+                <li id="todoList"></li>
+            </ul>
+            <div>
+                <hr class="counter" />
+                <div class="counter-container">
+                    <p>Count All :<span id="todoCount">0</span></p>
+                    <p>Completed:<span id="todoCountCompleted">0</span></p>
+                    <p>
+                        Not Complete:<span id="todoCountNotCompleted">0</span>
+                    </p>
+                    <button id="deleteButton">Clear</button>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
